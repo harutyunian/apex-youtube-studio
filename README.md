@@ -3,6 +3,9 @@
 > **Universal AI Film Studio OS for YouTube Creators & Documentary Teams.**  
 > **9 Specialized Agents** (Producer, Screenwriter, Director/DP, Editor/Sound, Thumbnail Auditor, Retention Auditor, Visual Supervisor Judge, 24-Viewer Panel, Santa Release Judge) + **25 Modular Skills** + **Deterministic Python QA Scripts** enforcing **BEFORE & AFTER** gates on every thumbnail and every second of video.
 
+**Language:** English (Primary) · [Русская документация (`docs/README.ru.md`)](docs/README.ru.md)  
+**Author:** Artur Harutyunyan — [LinkedIn](https://www.linkedin.com/in/artur-harutyunyan-a09a3111a/) · [GitHub](https://github.com/harutyunian/apex-youtube-studio)
+
 Works across **any niche** (Finance, Business, Tech, History, True Crime, Science, Storytelling, Education, Shorts, Talking Head, or AI-assisted documentaries) and plugs directly into **OpenCode** or **Claude Code** in one command.
 
 ---
@@ -135,6 +138,10 @@ Most AI video workflows fail for the same five reasons:
 ### 2. Install Agents & Skills
 
 ```bash
+# Option A: Install skills directly via the open Agent Skills CLI (skills.sh)
+npx skills add harutyunian/apex-youtube-studio
+
+# Option B: Full install (all 9 subagents + 25 skills + channel templates)
 git clone https://github.com/harutyunian/apex-youtube-studio.git
 cd apex-youtube-studio
 pip install -r requirements.txt
@@ -202,5 +209,6 @@ python3 skills/mrbeast-10x-viral-video/scripts/audit_mrbeast_video.py \
 - **[Complete Crew, Critics, Viewers & Judges Guide (`docs/AGENTS_ROSTER.md`)](docs/AGENTS_ROSTER.md)**
 - **[Channel Customization Templates (`templates/`)](templates/)**
 
-## License
-MIT — see [LICENSE](LICENSE).
+## Author & License
+Created by **Artur Harutyunyan** ([LinkedIn](https://www.linkedin.com/in/artur-harutyunyan-a09a3111a/) · [GitHub](https://github.com/harutyunian/apex-youtube-studio)).  
+MIT License — see [LICENSE](LICENSE).

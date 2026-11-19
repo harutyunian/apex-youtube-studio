@@ -3,6 +3,9 @@
 > **Универсальная AI-студия полного цикла для создания и жёсткого контроля качества YouTube-видео и обложек.**  
 > **9 специализированных субагентов** (Продюсер, Сценарист, Режиссёр/Оператор, Монтажёр/Звукорежиссёр, Критик обложек, Судья удержания, Визуальный Супервизор-судья, Панель из 10–24 зрителей, Финальный арбитр релиза) + **25 скиллов** + **Python-скрипты проверки ДО и ПОСЛЕ**.
 
+**Язык репозитория:** основной интерфейс на английском ([`README.md`](../README.md)) + полная документация на русском (`docs/README.ru.md`).  
+**Автор:** Artur Harutyunyan — [LinkedIn](https://www.linkedin.com/in/artur-harutyunyan-a09a3111a/) · [GitHub](https://github.com/harutyunian/apex-youtube-studio)
+
 Работает для **любой ниши** (финансы, документалки, технологии, история, тру-крайм, образование, сторителлинг, Shorts, говорящая голова или AI-видео) и ставится в **OpenCode** или **Claude Code** одной командой.
 
 ---
@@ -35,6 +38,10 @@
 ## Быстрая установка
 
 ```bash
+# Вариант A: быстрая установка скиллов через Agent Skills CLI (skills.sh)
+npx skills add harutyunian/apex-youtube-studio
+
+# Вариант B: полная установка (9 субагентов + 25 скиллов + шаблоны)
 git clone https://github.com/harutyunian/apex-youtube-studio.git
 cd apex-youtube-studio
 pip install -r requirements.txt
