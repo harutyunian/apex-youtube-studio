@@ -1,7 +1,7 @@
 # Apex YouTube Studio
 
 > **Universal AI Film Studio OS for YouTube Creators & Documentary Teams.**  
-> **9 Specialized Agents** (Producer, Screenwriter, Director/DP, Editor/Sound, Thumbnail Auditor, Retention Auditor, Visual Supervisor Judge, 24-Viewer Panel, Santa Release Judge) + **25 Modular Skills** + **Deterministic Python QA Scripts** enforcing **BEFORE & AFTER** gates on every thumbnail and every second of video.
+> **9 Specialized Agents** (Producer, Screenwriter, Director/DP, Editor/Sound, Thumbnail Auditor, Retention Auditor, Visual Supervisor Judge, 24-Viewer Panel, Santa Release Judge) + **30 Modular Skills** + **Deterministic Python QA Scripts** enforcing **BEFORE & AFTER** gates on every thumbnail and every second of video.
 
 **Language:** English (Primary) · [Русская документация (`docs/README.ru.md`)](docs/README.ru.md)  
 **Author:** Artur Harutyunyan — [LinkedIn](https://www.linkedin.com/in/artur-harutyunyan-a09a3111a/) · [GitHub](https://github.com/harutyunian/apex-youtube-studio)
@@ -94,7 +94,7 @@ Most AI video workflows fail for the same five reasons:
 ## Bundled Skills & CLI Scripts (`skills/`)
 
 <details>
-<summary><strong>Click to expand all 25 Skills & Executable Python Scripts</strong></summary>
+<summary><strong>Click to expand all 30 Skills & Executable Python Scripts</strong></summary>
 
 | Skill | Purpose | Included Scripts |
 |---|---|---|
@@ -119,7 +119,9 @@ Most AI video workflows fail for the same five reasons:
 | `yt-plan` | Sustainable upload calendar planner | — |
 | `yt-shorts` | Extract self-contained Shorts from long videos | — |
 | `yt-comment` | Creator-voice comment triage & replies | — |
-| `hyperframes` & `hyperframes-cli` | HTML/GSAP/SVG -> deterministic 1080p MP4 engine | `scripts/*` |
+| `hyperframes`, `hyperframes-cli` & `hyperframes-registry` | HTML/GSAP/SVG -> deterministic 1080p MP4 engine + 450+ blocks | `scripts/*` |
+| `reverse-any-video` & `style-sampling` | Recreate reference video styles or reverse-engineer motion frame-by-frame | `scripts/*` |
+| `remotion-to-hyperframes` & `figma` | Port Remotion/Lottie/Three.js/Manim or import Figma tokens/frames into motion | `scripts/*` |
 | `media-use` | Audio mixing, LUFS, voiceover, cutouts & color tools | `scripts/*` |
 | `video-editing` | FFmpeg / Remotion / AI-assisted video workflows | — |
 
