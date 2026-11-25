@@ -1,12 +1,12 @@
 # Apex YouTube Studio
 
 > **Universal AI Film Studio OS for YouTube Creators & Documentary Teams.**  
-> **9 Specialized Agents** (Producer, Screenwriter, Director/DP, Editor/Sound, Thumbnail Auditor, Retention Auditor, Visual Supervisor Judge, 24-Viewer Panel, Santa Release Judge) + **30 Modular Skills** + **Deterministic Python QA Scripts** enforcing **BEFORE & AFTER** gates on every thumbnail and every second of video.
+> **10 Specialized Agents** (Producer, Screenwriter, Director/DP, Editor/Sound, Thumbnail Auditor, Retention Auditor, Visual Supervisor Judge, 24-Viewer Panel, Santa Release Judge, Behavioral Psychology Strategist) + **32 Modular Skills** + **Deterministic Python QA Scripts** enforcing **BEFORE & AFTER** gates on every thumbnail and every second of video.
 
 **Language:** English (Primary) · [Русская документация (`docs/README.ru.md`)](docs/README.ru.md)  
 **Author:** Artur Harutyunyan — [LinkedIn](https://www.linkedin.com/in/artur-harutyunyan-a09a3111a/) · [GitHub](https://github.com/harutyunian/apex-youtube-studio)
 
-Works across **any niche** (Finance, Business, Tech, History, True Crime, Science, Storytelling, Education, Shorts, Talking Head, or AI-assisted documentaries) and plugs directly into **OpenCode** or **Claude Code** in one command.
+Works across **any niche** (Finance, Business, Tech, History, True Crime, Science, Storytelling, Education, Shorts, Talking Head, or AI-assisted documentaries) and plugs directly into **OpenCode**, **Claude Code**, or **Antigravity** in one command.
 
 ---
 
@@ -88,17 +88,20 @@ Most AI video workflows fail for the same five reasons:
 | **`visual-supervisor-judge`** | Multimodal Director Judge | **AFTER** | Uploads MP4 proxy + `START/MID/END` contact sheets to independent Gemini (`15-pt` rubric) |
 | **`viewer-panel-critic`** | Target Audience Panel | **AFTER** | Simulates 10–24 realistic target viewers scoring drop-off timestamps & annoyances |
 | **`santa-release-judge`** | Dual Release Arbiter | **FINAL GATE** | Runs two isolated adversarial reviewers (`santa-method`) before upload |
+| **`behavioral-psychology-strategist`** | Behavioral Click & Neuro-Retention | **PRE & POST** | Audits CCN, 12 click mechanisms, 12 neuro-retention mechanics, voice coupling, Studio curves & `1+3` Shorts |
 
 ---
 
 ## Bundled Skills & CLI Scripts (`skills/`)
 
 <details>
-<summary><strong>Click to expand all 30 Skills & Executable Python Scripts</strong></summary>
+<summary><strong>Click to expand all 32 Skills & Executable Python Scripts</strong></summary>
 
 | Skill | Purpose | Included Scripts |
 |---|---|---|
 | `youtube-before-after-qa` | Master 4-Stage BEFORE & AFTER orchestrator | — |
+| `yt-click-psychology` | 12 behavioral CTR mechanisms, CCN matrix, Test & Compare & traffic benchmarks | — |
+| `yt-neuro-retention` | 12 neuro-retention mechanics, ABT/McKee/Ovsiankina, curve diagnostics & `1+3` Shorts | — |
 | `youtube-retention-engine` | Full `5zu8s38ZwtQ` retention rules (`PRE` + `POST`) | `scripts/audit_retention_architecture.py` |
 | `mrbeast-10x-viral-video` | 10x escalation & cadence audit | `scripts/audit_mrbeast_video.py` |
 | `yt-thumbnail-brief` | `KE4zqD0ONDI` packaging brief + TV 50% / 120px checks | `scripts/audit_thumbnail.py` |
@@ -134,7 +137,7 @@ Most AI video workflows fail for the same five reasons:
 ### 1. Prerequisites
 - **Python 3.10+** (`pip install -r requirements.txt`)
 - **FFmpeg & FFprobe** (`brew install ffmpeg` on macOS / `apt install ffmpeg` on Linux)
-- **OpenCode** or **Claude Code** (optional: Node.js `>= 18` for HyperFrames HTML-to-Video rendering)
+- **OpenCode**, **Claude Code**, or **Antigravity** (optional: Node.js `>= 18` for HyperFrames HTML-to-Video rendering)
 - Copy `.env.example` to `.env` and set `GEMINI_API_KEY` (for multimodal supervision & image/audio generation)
 
 ### 2. Install Agents & Skills
@@ -143,7 +146,7 @@ Most AI video workflows fail for the same five reasons:
 # Option A: Install skills directly via the open Agent Skills CLI (skills.sh)
 npx skills add harutyunian/apex-youtube-studio
 
-# Option B: Full install (all 9 subagents + 25 skills + channel templates)
+# Option B: Full install (all 10 subagents + 32 skills + channel templates)
 git clone https://github.com/harutyunian/apex-youtube-studio.git
 cd apex-youtube-studio
 pip install -r requirements.txt
@@ -154,7 +157,10 @@ pip install -r requirements.txt
 # OR install globally for Claude Code (~/.claude/)
 ./install.sh --claude
 
-# OR install into both OpenCode + Claude Code
+# OR install globally for Antigravity (~/.gemini/config/)
+./install.sh --antigravity
+
+# OR install into OpenCode + Claude Code + Antigravity
 ./install.sh --all
 
 # OR bootstrap a brand-new YouTube channel repository with all templates
@@ -207,6 +213,7 @@ python3 skills/mrbeast-10x-viral-video/scripts/audit_mrbeast_video.py \
 
 ## Documentation
 - **[Russian Documentation (`docs/README.ru.md`)](docs/README.ru.md)**
+- **[Behavioral Click Psychology & Neuro-Retention Research Notes (`docs/BEHAVIORAL_PSYCHOLOGY_NOTES.md`)](docs/BEHAVIORAL_PSYCHOLOGY_NOTES.md)**
 - **[Step-by-Step 4-Stage BEFORE & AFTER Workflow (`docs/WORKFLOW.md`)](docs/WORKFLOW.md)**
 - **[Complete Crew, Critics, Viewers & Judges Guide (`docs/AGENTS_ROSTER.md`)](docs/AGENTS_ROSTER.md)**
 - **[Channel Customization Templates (`templates/`)](templates/)**

@@ -1,6 +1,6 @@
 # Complete Crew, Critics, Viewers & Judges Roster (`AGENTS_ROSTER.md`)
 
-All 9 subagents live in `agents/` and work seamlessly with both **OpenCode** and **Claude Code**.
+All 10 subagents live in `agents/` and work seamlessly across **OpenCode**, **Claude Code**, and **Antigravity**.
 
 ---
 
@@ -44,3 +44,7 @@ All 9 subagents live in `agents/` and work seamlessly with both **OpenCode** and
 
 ### 9. `santa-release-judge` (Dual Adversarial Release Arbiter)
 - **Focus:** Two isolated reviewers independently verify facts, telemetry consistency, chapter rules (`00:00`, `>= 3`, `>= 10s`), ad/synthetic compliance, and link hygiene (`PASS` + `PASS` required before upload).
+
+### 10. `behavioral-psychology-strategist` (Behavioral Click & Neuro-Retention Strategist)
+- **Focus:** Audits and designs CCN Matrix positioning, all 12 behavioral click mechanisms (`150ms` System 1, Processing Fluency, Von Restorff feed contrast, Loewenstein Info Gap, Gaze Cueing, Closed-Mouth authenticity, Negativity/Loss Aversion, Tribalism `BIRGing`/`Schadenfreude`, High Arousal, Test & Compare), all 12 neuro-retention mechanics (*In Media Res*, Cortisol->Oxytocin, cascading Ovsiankina loops, ABT spine, `45s` dishabituation, `3:00` Re-hook, McKee act polarity, Goal-Gradient chapters, Mayer load, Peak-End bridge, expressive voice/auto-dub risk), Studio curve diagnostics, and the `1+3` Long-to-Shorts pipeline.
+- **Key Tools:** `title.py`, `hookscore.py`, `audit_thumbnail.py`, `audit_retention_architecture.py`, `retention.py`.

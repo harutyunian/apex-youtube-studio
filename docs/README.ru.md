@@ -1,12 +1,12 @@
 # Apex YouTube Studio (Русская документация)
 
 > **Универсальная AI-студия полного цикла для создания и жёсткого контроля качества YouTube-видео и обложек.**  
-> **9 специализированных субагентов** (Продюсер, Сценарист, Режиссёр/Оператор, Монтажёр/Звукорежиссёр, Критик обложек, Судья удержания, Визуальный Супервизор-судья, Панель из 10–24 зрителей, Финальный арбитр релиза) + **30 скиллов** + **Python-скрипты проверки ДО и ПОСЛЕ**.
+> **10 специализированных субагентов** (Продюсер, Сценарист, Режиссёр/Оператор, Монтажёр/Звукорежиссёр, Критик обложек, Судья удержания, Визуальный Супервизор-судья, Панель из 10–24 зрителей, Финальный арбитр релиза, Стратег поведенческой психологии и нейроудержания) + **32 скилла** + **Python-скрипты проверки ДО и ПОСЛЕ**.
 
-**Язык репозитория:** основной интерфейс на английском ([`README.md`](../README.md)) + полная документация на русском (`docs/README.ru.md`).  
+**Язык репозитория:** основной интерфейс на английском ([`README.md`](../README.md)) + полная документация на русском (`docs/README.ru.md`) + [научно-поведенческая база знаний (`docs/BEHAVIORAL_PSYCHOLOGY_NOTES.md`)](BEHAVIORAL_PSYCHOLOGY_NOTES.md).  
 **Автор:** Artur Harutyunyan — [LinkedIn](https://www.linkedin.com/in/artur-harutyunyan-a09a3111a/) · [GitHub](https://github.com/harutyunian/apex-youtube-studio)
 
-Работает для **любой ниши** (финансы, документалки, технологии, история, тру-крайм, образование, сторителлинг, Shorts, говорящая голова или AI-видео) и ставится в **OpenCode** или **Claude Code** одной командой.
+Работает для **любой ниши** (финансы, документалки, технологии, история, тру-крайм, образование, сторителлинг, Shorts, говорящая голова или AI-видео) и ставится в **OpenCode**, **Claude Code** и **Antigravity** одной командой.
 
 ---
 
@@ -41,17 +41,20 @@
 # Вариант A: быстрая установка скиллов через Agent Skills CLI (skills.sh)
 npx skills add harutyunian/apex-youtube-studio
 
-# Вариант B: полная установка (9 субагентов + 25 скиллов + шаблоны)
+# Вариант B: полная установка (10 субагентов + 32 скилла + шаблоны)
 git clone https://github.com/harutyunian/apex-youtube-studio.git
 cd apex-youtube-studio
 pip install -r requirements.txt
 cp .env.example .env  # вписать GEMINI_API_KEY
 
-# Установить агентов и скиллы в OpenCode и Claude Code:
+# Установить агентов и скиллы в OpenCode, Claude Code и Antigravity:
 ./install.sh --all
+
+# Или только в Antigravity (~/.gemini/config/):
+./install.sh --antigravity
 
 # ИЛИ развернуть шаблон нового YouTube-проекта:
 ./install.sh --project /path/to/my-youtube-channel
 ```
 
-Смотри подробности по каждому агенту в [`docs/AGENTS_ROSTER.md`](AGENTS_ROSTER.md) и пошаговые команды в [`docs/WORKFLOW.md`](WORKFLOW.md).
+Смотри подробности по каждому агенту в [`docs/AGENTS_ROSTER.md`](AGENTS_ROSTER.md), пошаговые команды в [`docs/WORKFLOW.md`](WORKFLOW.md) и поведенческие исследования в [`docs/BEHAVIORAL_PSYCHOLOGY_NOTES.md`](BEHAVIORAL_PSYCHOLOGY_NOTES.md).
